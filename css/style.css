@@ -1,0 +1,162 @@
+@font-face {
+    font-family:"Digital Mono";
+    src: url("https://cdn.rawgit.com/ignacio-long/freeCodeCamp_projectFiles/master/digital-7%20(mono).ttf");
+}
+
+body {
+	font-size: 12px;
+	background-color: #999;
+	font-family: 'Audiowide';
+	text-align: center;
+}
+
+.simonGame {
+	width: 80vw;
+	height: 80vw;
+	max-width: 600px;
+	max-height: 600px;
+	background-color: #333;
+	position: relative;
+	margin: 3em auto 0;
+	border-radius: 46%;
+	border: double #CCC 1.6vw;
+	box-shadow: 0px 0px 80px 1px #222121, inset 0px 0px 19px 3px #222121;
+}
+
+#center {
+	background-color: #333;
+	width: 39vw; height: 39vw;
+	max-width: 285px; max-height: 285px;
+	position: absolute;
+	left: 0; right: 0; bottom: 0; top: 50%;
+	transform: translatey(-50%);
+	margin: 0 auto;
+	border-radius: 43%;
+	box-shadow: 0px 0px 50px 1px #222121, inset 0px 0px 19px 3px #222121;
+}
+
+#gameControls {
+	background: linear-gradient(to bottom, #222 0%, #222 40%, #CECECE 40%, #CEC 100%);
+	color: #B6B6B6;
+	width: 35vw; height: 35vw;
+	max-width: 262px; max-height: 262px;
+	position: absolute;
+	left: 0; right: 0; bottom: 0; top: 50%;
+	transform: translatey(-50%);
+	margin: 0 auto;
+	border-radius: 43%;
+	box-shadow: 0px 0px 60px 1px #323131, inset -1px -1px 9px 1px #515151;
+}
+
+#simon {
+	width: 35vw;
+	height: 14vw;
+	margin: 1vw auto;
+	font-size: 7vw;
+	text-align: center;
+	display: table-cell;
+	vertical-align: bottom;
+}
+
+#controls {
+	width: 90%; height: 20%;
+	margin: 0 auto; padding: 0;
+}
+
+#displayContainer {
+	width: 35%; height: 100%;
+	margin-top: 3%;
+	display: inline-block;
+}
+
+.btnContainer {
+	width: 28%; height: 80%;
+	color: #222;
+	font-family: 'Montserrat';
+	font-size: 1.6vw;
+	vertical-align: bottom;
+	display: inline-block;
+}
+
+#counterDisplay {
+	background-color: #4F0625;
+	color: #BF3930;
+	margin: 4% auto 0;
+	width: 70%; height: 75%;
+	border: solid 3px black;
+	border-radius: .6vw;
+	font-family: 'Digital Mono';
+	font-size: 6.3vw;
+	box-shadow: 0px 0px 7px 0px #222121, inset -1px -1px 30px 1px #515151;
+}
+
+.ctrlBtns {
+	width: 30%; height: 50%;
+	margin: 0 auto 5%;
+	border: solid .1em #000;
+	border-radius: 50%;
+	box-shadow: 0px 0px 3px 0px #222121, inset -1px -1px 7px 1px #515151;
+}
+
+#startBtn {
+	background-color: #623;
+}
+
+#strictBtn {
+	background-color: #623;
+}
+
+.gameBtn {
+	width: 46%;
+	height: 46%;
+	float: left;
+	margin: 2.6% 0 0 2.6%;
+	border-radius: 7%;
+	box-shadow: 0px 0px 10px 3px #222121, inset 0px 0px 99px 10px #515151;
+}
+
+#btn1 {
+	background-color: #070;
+	border-top-left-radius: 100%;
+}
+
+#btn2 {
+	background-color: #900;
+	border-top-right-radius: 100%;
+}
+
+#btn3 {
+	background-color: #CC0;
+	border-bottom-left-radius: 100%;
+}
+
+#btn4 {
+	background-color: #00A;
+	border-bottom-right-radius: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* Responsive Attributes */
+@media all and (min-width: 750px) {
+	.simonGame {
+		border: double #CCC 10px;
+	}
+	
+	#simon {
+		font-size: 52px;
+		height: 105px;
+	}
+
+	#counterDisplay {
+		font-size: 4em;
+	}
+
+	.btnContainer {
+		font-size: 1em;
+	}
+	
+}
